@@ -132,7 +132,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			// and assumes one leg passes the other at the normalized clip times of 0.0 and 0.5)
 			float runCycle =
 				Mathf.Repeat(
-					m_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime + m_RunCycleLegOffset, 1);
+					m_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime + m_RunCycleLegOffset, 3);
 			float jumpLeg = (runCycle < k_Half ? 1 : -1) * m_ForwardAmount;
 			if (m_IsGrounded)
 			{
